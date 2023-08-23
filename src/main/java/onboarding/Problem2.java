@@ -1,12 +1,13 @@
 package onboarding;
 
 public class Problem2 {
-    static boolean check = true;
+
     public static String solution(String cryptogram) {
+        boolean check = true;
         String answer = "answer";
-        while(check){
+        while (check) {
             answer = getAnswerWithoutDuplicate(cryptogram);
-            if(answer == cryptogram || answer == ""){
+            if (answer.equals(cryptogram) || answer.equals("")) {
                 check = false;
             }
             cryptogram = answer;
@@ -16,17 +17,27 @@ public class Problem2 {
     }
 
     private static String getAnswerWithoutDuplicate(String cryptogram) {
-        String temp_answer = "";
+        StringBuilder temp_answer = new StringBuilder();
         for (int i = 0; i < cryptogram.length(); ++i) {
             if (i == 0) {
+                if (cryptogram.charAt(i) != cryptogram.charAt(i + 1)) {
+                    temp_answer.append(cryptogram.charAt(i));
+                }
 
             } else if (i == cryptogram.length() - 1) {
+                if (cryptogram.charAt(i) != cryptogram.charAt(i - 1)) {
+                    temp_answer.append(cryptogram.charAt(i));
+                }
 
             } else {
-
+                if ((cryptogram.charAt(i) != cryptogram.charAt(i - 1)) &&
+                        (cryptogram.charAt(i) != cryptogram.charAt(i + 1))) {
+                    temp_answer.append(cryptogram.charAt(i));
+                }
             }
         }
-        return temp_answer;
+        System.out.println("result = " + temp_answer);
+        return temp_answer.toString();
     }
 
 
