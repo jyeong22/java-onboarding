@@ -12,6 +12,7 @@ class Problem1 {
     private static final int LAST_PAGE_OF_BOOK = 400;
 
 
+
     public static int solution(List<Integer> pobi, List<Integer> crong) {
         int answer = Integer.MAX_VALUE;
 
