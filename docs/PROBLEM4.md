@@ -19,3 +19,15 @@
 | word | result |
 | --- | --- |
 | "I love you" | "R olev blf" |
+
+### 기능 구현 목록
+
+- [ ] A 문자는 아스키 코드 65, Z 문자는 아스키 코드 90,
+a 문자는 아스키 코드 97, z 문자는 아스키 코드 122 임을 이용해
+대문자인지 소문자인지 구분
+  - [ ] 대문자일 경우 155에서 해당 문자의 아스키 코드 값을 뺀 후
+  알파벳 대문자로 변환 후 StringBuilder에 append
+  - [ ] 소문자일 경우 219에서 해당 문자의 아스키 코드 값을 뺀 후
+    알파벳 소문자로 변환 후 StringBuilder에 append
+  - [ ] space일 경우에는 StringBuilder에  " " append
+  - 혹은, Character.isUpperCase(char c), Character.isLowerCase(char c) 이용
