@@ -21,3 +21,13 @@
 | forms | result |
 | --- | --- |
 | [ ["jm@email.com", "제이엠"], ["jason@email.com", "제이슨"], ["woniee@email.com", "워니"], ["mj@email.com", "엠제이"], ["nowm@email.com", "이제엠"] ] | ["jason@email.com", "jm@email.com", "mj@email.com"] |
+
+### 기능 구현 목록
+
+- [ ] list의 outer section을 돌며 inner list의 2번쨰 원소(이름)만을 따로 저장하는 list 만들기
+- [ ] 이름만 저장된 list를 n^2만큼 돌기 (i, j)
+  - [ ] a.length() * b.length() 만큼 돌며 중복된 문자가 있는지 확인
+  - [ ] 만약 중복된 것이 있다면 result에 i, j번째 email 추가 & break;
+- [ ] 중복 제거, 오름차순 정렬
+- 
+
