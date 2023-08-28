@@ -118,8 +118,8 @@ class ApplicationTest {
         void case1() {
             String user = "mrko";
             List<List<String>> friends = List.of(
-                    List.of("donut", "andole"),
                     List.of("donut", "jun"),
+                    List.of("donut", "andole"),
                     List.of("donut", "mrko"),
                     List.of("shakevan", "andole"),
                     List.of("shakevan", "jun"),
